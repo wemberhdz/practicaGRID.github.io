@@ -1,0 +1,50 @@
+.grid-container{
+    background-color: #ECF2FF;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-auto-rows: minmax(100px, 0px);
+    column-gap: 10px;
+    row-gap: 10px;
+    
+
+}
+
+.item-curriculum{
+    
+    background-color: #5d9c59;
+    padding: 20px;
+    border: 1px solid black;
+    
+    
+}
+
+.item-curriculum:nth-child(1){
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #F6E1C3;
+    grid-row: 1/8;
+    text-align: center;
+    
+}
+
+.item-curriculum:nth-child(2){
+    background-color: #F6E1C3;
+    grid-row: span 3;
+    grid-column: span 2;
+    align-items: start;
+    text-align: start;
+   
+}
+
+.item-curriculum:nth-child(3){
+    background-color: #F6E1C3;
+    grid-row: span 4;
+    grid-column: span 2;
+    
+    
+}
+
+.grid-container > div:hover{
+border: 1px solid black;        
+}
+
